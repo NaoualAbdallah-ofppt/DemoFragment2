@@ -36,7 +36,8 @@ public class Produit {
 
     public static ArrayList<Produit> getLstProduit()
     {
-
+//Remplir la collection de produits à partir de la source de données
+        //La source de données : bases de données, api, fichiers....
         return new ArrayList<Produit>(
                 Arrays.asList(
                         new Produit("Stylo", 20.0),

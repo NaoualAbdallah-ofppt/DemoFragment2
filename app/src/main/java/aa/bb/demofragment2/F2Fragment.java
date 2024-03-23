@@ -28,4 +28,11 @@ TextView txtPrix;
         txtNom.setText(nom);
         txtPrix.setText(String.valueOf(prix));
     }
+    public double getPrixFromFragment()
+    {
+
+        if (txtPrix.getText().toString() == "")
+            return 0.0;
+        return Double.parseDouble(txtPrix.getText().toString());
+    }
 }
