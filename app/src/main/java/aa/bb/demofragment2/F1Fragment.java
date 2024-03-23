@@ -34,6 +34,7 @@ TextView txt;
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
            //Cast obligatoire
+
             F2Fragment F2 = (F2Fragment) getParentFragmentManager().
                     findFragmentById(R.id.F2);
 

@@ -1,7 +1,10 @@
 package aa.bb.demofragment2;
 
+import android.content.Context;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -14,12 +17,23 @@ TextView txtNom;
 TextView txtPrix;
 
     @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View V= inflater.inflate(R.layout.fragment_f2, container, false);
     txtNom=V.findViewById(R.id.txtNom);
         txtPrix=V.findViewById(R.id.txtPrix);
+
 
     return V;
     }
